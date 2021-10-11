@@ -1,0 +1,26 @@
+{
+  "name": "yoga-class-website",
+  "version": "1.0.0",
+  "main": "scripr.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "eslint": "^7.32.0",
+    "parcel": "^2.0.0-rc.0",
+    "sass": "^1.41.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@popperjs/core": "^2.10.1",
+    "bootstrap": "^5.1.1",
+    "core-js": "^3.18.0",
+    "swiper": "^7.0.8"
+  }
+}

@@ -1,0 +1,156 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Montserrat:wght@100&display=swap');
+@import '_variables.scss';
+
+// $balooBhaiFont: 'Baloo Bhai 2', cursive;
+// $montSerrat: 'Montserrat', sans-serif;
+body {
+  padding: 0;
+  margin: 0;
+}
+
+// HEADER STYLE START
+header {
+  .header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .header-container-logo {
+      position: relative;
+      margin-left: 10px;
+      background-color: #a7d7c5;
+
+      #logo {
+        // position: absolute;
+        padding: 5px;
+        left: 0;
+        top: 0;
+      }
+    }
+    .header-menu-nav {
+      padding-top: 45px;
+      width: 100%;
+      padding-bottom: 45px;
+
+      ul {
+        background-color: #e2ede8;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+      li {
+        float: right;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: 100%;
+        display: inline;
+        padding-left: 45px;
+        padding-right: 45px;
+        cursor: pointer;
+        font-weight: bold;
+        font-family: $balooBhaiFont;
+        color: $navTextColor;
+        &:hover {
+          background-color: #c7d9d5;
+        }
+      }
+    }
+  }
+}
+//HEADER START END
+
+// FIRST SECTION STYLE START
+
+.firstSection {
+  .container-column-girl {
+    position: relative;
+    #headerPiche {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .container-column-girl-holder {
+    position: relative;
+  }
+  .container-column-txtBtn-holder {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: $mainColor;
+    font-weight: bold;
+    h1 {
+      font-weight: bolder;
+      font-family: $balooBhaiFont;
+    }
+    p {
+      font-family: $montSerrat;
+    }
+
+    .decription-btn-joinNow {
+      border-radius: 15px;
+      background-color: $mainColor;
+      font-family: $balooBhaiFont;
+      border: none;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-weight: bold;
+      color: $white;
+    }
+  }
+}
+// FIRST SECTION STYLE END
+
+// SECOND SECTION STULE START
+
+.section-chooseClass {
+  margin-top: 5px;
+  background-color: $mainColor;
+  padding-top: 120px;
+  padding-bottom:120px;
+  .chooseClass-description {
+    text-align: center;
+
+    h1 {
+      font-family: $balooBhaiFont;
+      font-weight: bolder;
+      color: $white;
+    }
+    h3 {
+      font-family: $montSerrat;
+      font-family: bold;
+      color: $white;
+    }
+  }
+
+  .imageWrap {
+    position: relative;
+    .girlImage {
+      position: absolute;
+
+      left: 0;
+      transform: translate(11%, 11%);
+    }
+  }
+  .textWrap {
+    // text-align: center;
+    font-family: $balooBhaiFont;
+    color: $white;
+  }
+  .swiper {
+    align-items: center;
+    width: 50%;
+    height: 100%px;
+    
+    .swiper-slide{
+      position: relative;
+      left: 25%;
+
+      
+    }
+  }
+}
