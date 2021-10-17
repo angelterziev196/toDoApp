@@ -154,3 +154,49 @@ header {
     }
   }
 }
+
+
+// STATS SECTION START
+  .statsSection{
+    background-image: url("../Imgs/backgroundPicture.png");
+    
+    
+    .statsSection-container{
+      padding-top: 100px;
+      padding-bottom: 205px;
+      
+    }
+    .content-holder{
+      display:flex;
+      justify-content: space-between;
+    }
+    .title-holder{
+      h1{
+        font-weight: bolder;
+      }
+      font-weight: bold;
+      color: $mainColor;
+      font-family: $balooBhaiFont;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    .stats-holder{
+      h3{
+        font-weight: bolder;
+      }
+      font-weight: bold;
+      color: $mainColor;
+      font-family: $balooBhaiFont;
+      padding: 8% 0;
+      // align-items: center;
+      // justify-content: center;
+      width: 300px;
+      height: 300px;
+      text-align: center;
+      border: 4px solid $mainColor;
+      border-radius: 50%;
+    }
+
+
+  }
+//STATS SECTION END
