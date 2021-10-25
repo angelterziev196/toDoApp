@@ -66,6 +66,9 @@ header {
 .firstSection {
   .container-column-girl {
     position: relative;
+    #picheShape{
+      max-width: 100%;
+    }
     #headerPiche {
       max-width: 100%;
       position: absolute;
@@ -157,7 +160,7 @@ header {
 // STATS SECTION START
 .statsSection {
   background-image: url('../Imgs/backgroundPicture.png');
-
+  background-size: 100%, 100%;
   .statsSection-container {
     padding-top: 100px;
     padding-bottom: 205px;
@@ -283,10 +286,10 @@ header {
   background-color: $mainColor;
   padding-top: 120px;
   padding-bottom: 100px;
-  
-  .pricing-holder-row{
-    display:flex;
-  justify-content: space-between;
+
+  .pricing-holder-row {
+    display: flex;
+    justify-content: space-between;
   }
 
   .pricing-title {
@@ -295,34 +298,88 @@ header {
     align-items: center;
     justify-content: center;
     font-family: $balooBhaiFont;
-    color:$pricingBackground;
+    color: $pricingBackground;
     font-weight: bolder;
     padding-bottom: 52px;
-    
   }
 
-  .pricing-info{
+  .pricing-info {
     padding-top: 40px;
-    padding-bottom:40px;
-    
+    padding-bottom: 40px;
+
     width: 25%;
 
     text-align: center;
     border: 1px solid $mainColor;
-    border-radius:5px;
-    background-color:$pricingBackground;
-    font-family:$balooBhaiFont;
-    color:$mainColor;
+    border-radius: 5px;
+    background-color: $pricingBackground;
+    font-family: $balooBhaiFont;
+    color: $mainColor;
     font-weight: bolder;
 
-    .registerNow{
-      width:60%;
+    .registerNow {
+      width: 60%;
       border: 1px solid $mainColor;
       background-color: $mainColor;
       font-family: $balooBhaiFont;
-      color:$pricingBackground;
+      color: $pricingBackground;
       border-radius: 5px;
     }
   }
 }
 //PRICINT SECTION END
+
+
+// OUR TRAINER SECTION START
+
+.our-trainer{
+  background-image: url("/Imgs/ourTrainer-background-asset.png");
+  background-size: 100%, 100%;
+  height: 970px;
+  position: relative;
+  .our-trainer-row{
+    position: inherit;
+  }
+  .our-trainer-picture {
+    position: inherit;
+    
+    #our-trainer-img{
+      position:absolute;
+      // top:0;
+      right:50%;
+      transform:translate(50%,26%);
+      z-index: 1;
+    }
+    #our-trainer-shape{
+      position:absolute;
+      // top:0;
+      right:50%;
+      transform:translate(50%,10%);
+    }
+  }
+
+
+  .our-trainer-description{
+    position: inherit;
+    
+    .our-trainer-wrapper{
+      position:absolute;
+      // align-items:center;
+      bottom:30%;
+      text-align: center;
+      p{
+        color: $mainColor;
+        font-family: $balooBhaiFont;
+        font-size: 30px;
+        // max-width: 80%;
+      }
+      h1{
+        color: $mainColor;
+        font-family: $balooBhaiFont;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+// OUR TRAINER SECTION END
