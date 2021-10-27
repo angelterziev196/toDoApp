@@ -381,11 +381,11 @@ header {
 }
 
 // OUR TRAINER SECTION END
-.newsletter{
+.newsletter {
   background-color: $mainColor;
 
-  .newsletter-holder-row-content{
-    padding-top:130px;
+  .newsletter-holder-row-content {
+    padding-top: 130px;
     padding-bottom: 150px;
     font-family: $balooBhaiFont;
     display: flex;
@@ -393,9 +393,9 @@ header {
     align-items: center;
     text-align: center;
     color: $pricingBackground;
-    
-    font-size:20px;
-    h1{
+
+    font-size: 20px;
+    h1 {
       font-weight: bolder;
     }
 
@@ -403,16 +403,53 @@ header {
       display: flex;
       flex-direction: row;
       align-items: center;
-      input{
-        border:1px solid $mainColor;
-        padding-left:5px;
+      input {
+        border: 1px solid $mainColor;
+        padding-left: 5px;
         border-radius: 20px;
       }
-      button{
+      button {
         color: $mainColor;
-        border:none;
+        border: none;
         border-radius: 20px;
         transform: translateX(-35px);
+      }
+    }
+  }
+}
+
+//FOOTER
+.footer {
+  padding-top: 160px;
+  padding-bottom: 130px;
+  background-color: $pricingBackground;
+  .footer-row {
+    font-family: $balooBhaiFont;
+    color: $mainColor;
+    h4 {
+      font-weight: bolder;
+    }
+  }
+
+  .footer-title {
+    p {
+      padding-top: 5px;
+    }
+  }
+
+  .list-unstyled {
+    li {
+      padding-top: 5px;
+
+      a {
+        transition-property: border-bottom;
+        transition-duration: 400ms;
+        &:hover {
+          border-bottom: 3px solid $mainColor;
+        }
+        text-decoration: none;
+        color: $mainColor;
+        // text-decoration-color: none;
       }
     }
   }
