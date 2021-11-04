@@ -272,7 +272,7 @@ header {
   background-color: $mainColor;
   overflow: hidden;
   // height: 970px;
-overflow: hidden;
+  overflow: hidden;
   .bestInstructor-holder-row {
     text-align: left;
     display: flex;
@@ -303,7 +303,17 @@ overflow: hidden;
     }
   }
   // background-image: url('/Imgs/bestInstructor.png');
-  
+  .bestInstructor-holder-image {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .text-holder {
+      padding-bottom: 10px;
+    }
+  }
 }
 // BEST INSTRUCTOR SECTION END
 
@@ -314,7 +324,11 @@ overflow: hidden;
     padding-top: 100px;
     padding-bottom: 70px;
   }
-
+  .newExperience-holder-row-image {
+    img {
+      max-width: 100%;
+    }
+  }
   .newExperience-holder-row-content {
     display: inline-flex;
     flex-direction: column;
@@ -347,6 +361,21 @@ overflow: hidden;
       right: 0;
       bottom: -10px;
       max-height: 100%;
+    }
+  }
+  @include breakpoint(tablet) {
+    .newExperience-holder{
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+    .newExperience-holder-row-content {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      #new-experience-shape {
+        display: none;
+      }
     }
   }
 }
@@ -396,6 +425,23 @@ overflow: hidden;
       color: $pricingBackground;
       border-radius: 5px;
     }
+  }
+  @include breakpoint(tablet){
+    
+      padding-top: 10px;
+      padding-bottom: 10px;
+    
+    .pricing-holder-row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+    }
+    .pricing-info{
+      width: 75%;
+    }
+    
   }
 }
 //PRICINT SECTION END
