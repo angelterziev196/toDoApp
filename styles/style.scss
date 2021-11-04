@@ -1,8 +1,8 @@
-@import '../node_modules/bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Montserrat:wght@100&display=swap');
-@import '_variables.scss';
-@import '_mixins.scss';
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Montserrat:wght@100&display=swap");
+@import "_variables.scss";
+@import "_mixins.scss";
 
 // $balooBhaiFont: 'Baloo Bhai 2', cursive;
 // $montSerrat: 'Montserrat', sans-serif;
@@ -199,13 +199,20 @@ header {
       position: relative;
       left: 25%;
     }
+    .swiper-button-prev {
+      color: $pricingBackground !important;
+    }
+    .swiper-button-next {
+      color: $pricingBackground !important;
+    }
   }
 }
 
 // STATS SECTION START
 .statsSection {
-  background-image: url('../Imgs/backgroundPicture.png');
-  background-size: 100%, 100%;
+  background-image: url("../Imgs/backgroundPicture.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
   .statsSection-container {
     padding-top: 100px;
     padding-bottom: 205px;
@@ -240,14 +247,32 @@ header {
     border: 4px solid $mainColor;
     border-radius: 50%;
   }
+  @include breakpoint(tablet) {
+    background-image: none;
+    background-color: $pricingBackground;
+
+    .statsSection-container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .content-holder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .stats-holder {
+      margin-top: 10px;
+    }
+  }
 }
 //STATS SECTION END
 
 //BEST INSTRUCTOR SECTION START
 .bestInstructor {
   background-color: $mainColor;
+  overflow: hidden;
   // height: 970px;
-
+overflow: hidden;
   .bestInstructor-holder-row {
     text-align: left;
     display: flex;
@@ -278,6 +303,7 @@ header {
     }
   }
   // background-image: url('/Imgs/bestInstructor.png');
+  
 }
 // BEST INSTRUCTOR SECTION END
 
@@ -377,7 +403,7 @@ header {
 // OUR TRAINER SECTION START
 
 .our-trainer {
-  background-image: url('/Imgs/ourTrainer-background-asset.png');
+  background-image: url("/Imgs/ourTrainer-background-asset.png");
   background-size: 100%, 100%;
   height: 970px;
   position: relative;
