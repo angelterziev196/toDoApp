@@ -366,13 +366,18 @@ header {
   @include breakpoint(tablet) {
     .newExperience-holder{
       padding-top:10px;
-      padding-bottom:10px;
+      padding-bottom:0;
+    }
+    .newExperience-holder-row{
+      display: flex;
+      flex-direction: column-reverse;
     }
     .newExperience-holder-row-content {
       display:flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      padding-bottom: 10px;
       #new-experience-shape {
         display: none;
       }
@@ -440,6 +445,7 @@ header {
     }
     .pricing-info{
       width: 75%;
+      margin-top:5px
     }
     
   }
@@ -450,6 +456,7 @@ header {
 
 .our-trainer {
   background-image: url("/Imgs/ourTrainer-background-asset.png");
+  background-repeat:no-repeat;
   background-size: 100%, 100%;
   height: 970px;
   position: relative;
@@ -465,8 +472,10 @@ header {
       right: 50%;
       transform: translate(50%, 26%);
       z-index: 1;
+      max-width: 100%;
     }
     #our-trainer-shape {
+      max-width: 100%;
       position: absolute;
       // top:0;
       right: 50%;
@@ -493,6 +502,14 @@ header {
         font-family: $balooBhaiFont;
         font-weight: bolder;
       }
+    }
+  }
+  @include breakpoint(tablet){
+    
+    background-image: none;
+    background-color: $pricingBackground;
+    #our-trainer-shape{
+      display: none;
     }
   }
 }
