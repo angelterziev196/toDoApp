@@ -3,3 +3,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Montserrat:wght@100&display=swap");
 @import "_variables.scss";
 @import "_mixins.scss";
+
+.input-container {
+  .wrapper {
+    border: 1px solid $black;
+    border-radius: 10px;
+    padding: 20px;
+    input {
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+  }
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: $balooBhaiFont;
+}
+
+.toDo-list{
+  display: flex;
+  flex-direction: column;
+  .toDoWrap{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
