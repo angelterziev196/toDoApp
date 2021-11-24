@@ -23,6 +23,10 @@
 }
 
 .toDo-list{
+  
+  .hidden{
+    display: none;
+  }
   display: flex;
   flex-direction: column;
   .toDoWrap{
@@ -30,5 +34,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+    .hidden{
+      display: none;
+    }
   }
+  
 }
