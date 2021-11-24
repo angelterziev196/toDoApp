@@ -22,22 +22,20 @@
   font-family: $balooBhaiFont;
 }
 
-.toDo-list{
-  
-  .hidden{
+.toDo-list {
+  .hidden {
     display: none;
   }
   display: flex;
   flex-direction: column;
-  .toDoWrap{
+  .toDoWrap {
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-    .hidden{
+
+    .hidden {
       display: none;
     }
   }
-  
 }

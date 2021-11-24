@@ -12,10 +12,10 @@ class ToDoApp {
   constructor() {
     this._addToDo();
     this.toDoList.addEventListener("click", (e) => {
-      if(e.target.classList.contains("save")){
+      if (e.target.classList.contains("save")) {
         this._saveToDo(e);
       }
-      if(e.target.classList.contains("edit")){
+      if (e.target.classList.contains("edit")) {
         this._editToDo(e);
       }
       if (e.target.classList.contains("delete")) {
@@ -23,7 +23,7 @@ class ToDoApp {
       }
     });
   }
-  
+
   // Methods
   _addToDo() {
     this.submitButton.addEventListener("click", () => {
@@ -51,9 +51,9 @@ class ToDoApp {
     });
   }
 
-  _dataIndex(e){
-      const targetToDo = e.target.parentElement.parentElement;
-      return targetToDo.getAttribute("data-index");
+  _dataIndex(e) {
+    const targetToDo = e.target.parentElement.parentElement;
+    return targetToDo.getAttribute("data-index");
   }
 
   _deleteToDo(e) {
@@ -61,28 +61,28 @@ class ToDoApp {
     this._renderToDo();
   }
 
-  _editToDo(e){
+  _editToDo(e) {
     const parentEl = e.target.parentElement.parentElement;
     parentEl.firstElementChild.classList.add("hidden");
-    parentEl.firstElementChild.nextElementSibling.classList.remove('hidden');
+    parentEl.firstElementChild.nextElementSibling.classList.remove("hidden");
     const secondDivEl = e.target.parentElement;
-    secondDivEl.firstElementChild.classList.add('hidden');
-    secondDivEl.firstElementChild.nextElementSibling.classList.add('hidden');
-    secondDivEl.lastElementChild.classList.remove('hidden');
+    secondDivEl.firstElementChild.classList.add("hidden");
+    secondDivEl.firstElementChild.nextElementSibling.classList.add("hidden");
+    secondDivEl.lastElementChild.classList.remove("hidden");
   }
 
-  _saveToDo(e){
-    const editInputValue = document.getElementById('edit-input').value;
-    const edittedToDo = {todo: editInputValue};
+  _saveToDo(e) {
+    const editInputValue = document.getElementById("edit-input").value;
+    const edittedToDo = { todo: editInputValue };
     this.toDos.splice(this._dataIndex(e), 1, edittedToDo);
     this._renderToDo();
     const parentEl = e.target.parentElement.parentElement;
     parentEl.firstElementChild.classList.remove("hidden");
-    parentEl.firstElementChild.nextElementSibling.classList.add('hidden');
+    parentEl.firstElementChild.nextElementSibling.classList.add("hidden");
     const secondDivEl = e.target.parentElement;
-    secondDivEl.firstElementChild.classList.remove('hidden');
-    secondDivEl.firstElementChild.nextElementSibling.classList.remove('hidden');
-    secondDivEl.lastElementChild.classList.add('hidden');
+    secondDivEl.firstElementChild.classList.remove("hidden");
+    secondDivEl.firstElementChild.nextElementSibling.classList.remove("hidden");
+    secondDivEl.lastElementChild.classList.add("hidden");
   }
 }
 
